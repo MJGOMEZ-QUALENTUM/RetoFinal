@@ -20,8 +20,7 @@ jobs:
 
       - name: Levantar contenedores y crear base de datos  # Paso para ejecutar docker-compose up -d y crear la base de datos
         run: |
-          docker-compose up -d
-          docker-compose exec -T web python manage.py
+          docker-compose up -d && docker-compose exec -T web python manage.py
         if: ${{ success() }}
 
       - name: Ejecutar pruebas  # Paso para verificar contenido y ejecutar comandos
