@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - main  # No ejecutar en la rama main
+
+jobs:
+  prueba:
+    runs-on: ubuntu-latest  # Se ejecutará en una máquina virtual de Ubuntu
+
+    steps:
+      - name: Clonar repositorio  # Paso para clonar el repositorio
+        uses: actions/checkout@v2
+
+      - name: Configurar Python  # Paso para configurar Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Levantar contenedores y crear base de datos  # Paso para ejecutar docker-compose up -d y crear la base de datos
+        run: |
+          docker-compose up -d
+          docker-compose exec -T web python manage.py
+        if: ${{ success() }}
+
+      - name: Ejecutar pruebas  # Paso para verificar contenido y ejecutar comandos
+        run: |
+          docker-compose exec -T web bash -c 'cd tests && coverage run -m unittest discover -s . && coverage report -m --fail-under=80'
+        if: ${{ success() }}
+
+
+        
