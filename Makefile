@@ -19,4 +19,4 @@ detener:
 reanudar:
 	docker-compose up -d
 
-# comentario de prueba
+
