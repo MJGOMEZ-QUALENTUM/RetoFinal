@@ -26,5 +26,8 @@ haz este readme mas bonito: <body>
   <p>Si estás seguro de los cambios pero no quieres hacerlos en producción (main), puedes hacerlo en otra rama, por ejemplo dev, al hacer el <code>git push</code> se ejecutarán un action con los tests para confirmar que todo esta bien antes de que hagas el pull request a la main</p>
 
   <p>Podemos encontrar la documentación del reto final en el archivo Doccumentación.docx de este repositorio</p>
+
+  <p>Podemos encontrar el video de la solución en el siguiente enlace:</p>
+  https://alumnosunir-my.sharepoint.com/:v:/g/personal/migueljose_gomez_lopez_comunidadunir_net/EWSUoEv_YoROlNUNXWAzFUcBe_-1k0pR92BCBF6UCeWN7g?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=4zSoRZ
   
 </body>
