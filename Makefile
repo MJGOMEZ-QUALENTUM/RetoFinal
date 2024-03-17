@@ -1,6 +1,7 @@
 # Comando para iniciar el contenedor y la base de datos si se ha borrado antes o es la primera vez
 inicio:
-	docker-compose up -d && docker-compose exec web python manage.py
+	docker-compose up -d 
+	docker-compose exec web python manage.py
 
 # Comando para ejecutar los tests y ver su cobertura
 testear:
