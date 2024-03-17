@@ -24,4 +24,7 @@ haz este readme mas bonito: <body>
   </ol>
   
   <p>Si estás seguro de los cambios pero no quieres hacerlos en producción (main), puedes hacerlo en otra rama, por ejemplo dev, al hacer el <code>git push</code> se ejecutarán un action con los tests para confirmar que todo esta bien antes de que hagas el pull request a la main</p>
+
+  <p>Podemos encontrar la documentación del reto final en el archivo Doccumentación.docx de este repositorio</p>
+  
 </body>
